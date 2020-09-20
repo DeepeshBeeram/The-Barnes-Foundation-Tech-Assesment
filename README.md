@@ -14,7 +14,7 @@ Example: http://localhost:3010/api/tickets/1
 
 4. http://localhost:3010/api/events/{id} This end point will GET a event based on given event ID (1,2,3). If the event Id is not found this will throw a bad request with status 400.
 
-Example: http://localhost:3010/api/events/1
+    Example: http://localhost:3010/api/events/1
 
 5. http://localhost:3010/api/order This end point will POST a new order based on the conditions that the ticket quantity passed in the request body should not be more than the max_purchase value of the ticket type. 
 {
