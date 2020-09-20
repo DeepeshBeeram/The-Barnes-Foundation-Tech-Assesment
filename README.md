@@ -8,10 +8,13 @@ List of end points:
 1. http://localhost:3010/api/tickets This end point will GET all the available tickets.
 
 2. http://localhost:3010/api/tickets/{id} This end point will GET a ticket based on given ticket ID (1,2,3). If the ticket Id is not found this will throw a bad request with status 400.
+Example: http://localhost:3010/api/tickets/1
 
 3. http://localhost:3010/api/events?memberOnly=&category=&name= This end point will GET all the events when there are no filter query parameters given. Based on the given query parameters of category, member_only, event name this API will return those particular events accordingly. This API will enable searching for events that have a given keyword in it's event name, enable filtering for events whose category falls within a list of requested event categories, filtering for events where the member_only field is true/false.
 
 4. http://localhost:3010/api/events/{id} This end point will GET a event based on given event ID (1,2,3). If the event Id is not found this will throw a bad request with status 400.
+
+Example: http://localhost:3010/api/events/1
 
 5. http://localhost:3010/api/order This end point will POST a new order based on the conditions that the ticket quantity passed in the request body should not be more than the max_purchase value of the ticket type. 
 {
